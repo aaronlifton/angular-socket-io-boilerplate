@@ -26,19 +26,9 @@ Runs like a typical express app:
 
     node app.js
 
-### Running tests
-
-Coming soon!
-
 ### Receiving updates from upstream
 
 Just fetch the changes and merge them into your project with git.
-
-## Example Application
-
-I created a [simple instant messaging application](https://github.com/btford/angular-socket-io-im)
-and wrote a [blog post](http://briantford.com/blog/angular-socket-io.html) walking through the app to
-illustrate using the seed.
 
 ## Directory Layout
     
@@ -74,5 +64,4 @@ illustrate using the seed.
 ## Contact
 
 For more information on AngularJS please check out http://angularjs.org/
-For more on Express and Jade, http://expressjs.com/ and http://jade-lang.com/ are
-your friends.
+For more on Express and Jade, read http://expressjs.com/ and http://jade-lang.com/
