@@ -1,24 +1,42 @@
 extends layout
 
 block body
-  div(ng-controller='AppCtrl')
-    h2 Hello {{name}}
-    ul.menu
-      li
-        a(href='view1') view1
-      li
-        a(href='view2') view2
+    h1 Angular Socket.io IM Demo App
+    div(ng-controller='AppCtrl')
+        .col
+            h3 Messages
+            .overflowable
+                p(ng-repeat='message in messages',
+                ng-class='{alert: message.user == "chatroom"}') {{message.user}}: {{message.text}}
 
-    div(ng-view)
+        .col
+            h3 Users
+            .overflowable
+                p(ng-repeat='user in users') {{user}}
 
-    div
-      | Angular Socket.io seed app: v
-      span(app-version)
+        .clr
+            form(ng-submit='sendMessage()')
+                | Message:
+                input(size='60', ng-model='message')
+                input(type='submit', value='Send')
 
-  script(src='js/lib/angular/angular.js')
-  script(src='/socket.io/socket.io.js')
-  script(src='js/app.js')
-  script(src='js/services.js')
-  script(src='js/controllers.js')
-  script(src='js/filters.js')
-  script(src='js/directives.js')
+        .clr
+            h3 Change your name
+            p Your current user name is {{name}}
+            form(ng-submit='changeName()')
+                input(ng-model='newName')
+                input(type='submit', value='Change Name')
+
+    script(src='js/lib/angular/angular.js')
+    script(src='/socket.io/socket.io.js')
+    script(src='js/app.js')
+    script(src='js/services.js')
+    script(src='js/controllers.js')
+    script(src='js/filters.js')
+    script(src='js/directives.js')
+
+
+
+GitHub Links
+
+    GitHub
