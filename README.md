@@ -61,7 +61,7 @@ Just fetch the changes and merge them into your project with git.
 
 
 
-## Contact
+## Docs
 
-For more information on AngularJS please check out http://angularjs.org/
-For more on Express and Jade, read http://expressjs.com/ and http://jade-lang.com/
+For more info on AngularJS read http://angularjs.org/
+For more info on Express and Jade, read http://expressjs.com/ and http://jade-lang.com/
